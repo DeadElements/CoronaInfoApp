@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Corona Info</string>
+    <string name="ButtonText1">Get latest Infos</string>
+    <string name="ButtonTextInfoCases">current cases</string>
+    <string name="buttonSettings">Settings</string>
+    <string name="buttonInfo">Info</string>
+    <string name="Ampel1">Local restriction</string>
+    <string name="Ampel2">color:</string>
+
+
+
+
+    <string name="quote1"> Stay positive cause you are not negative</string>
+    <string name="quote2"> I am not buying a 2021 planner until i see a trailer</string>
+    <string name="quote3"> Apparently this year is written by Stephen King</string>
+    <string name="quote4"> I will not add year 2020 to my age cause I did not use it</string>
+    <string name="quote5"> Roses are red, March is grey, I hope we can leave our houses in May</string>
+
+    <string-array name="quotes">
+        <item>@string/quote1</item>
+        <item>@string/quote2</item>
+        <item>@string/quote3</item>
+        <item>@string/quote4</item>
+        <item>@string/quote5</item>
+    </string-array>
+</resources>
