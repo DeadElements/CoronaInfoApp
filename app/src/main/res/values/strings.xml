@@ -7,7 +7,8 @@
     <string name="Ampel1">Local restriction</string>
     <string name="Ampel2">color:</string>
 
-
+    <string name="notificationTirol">Notification Tirol</string>
+    <string name="notificationTirolBeschreibung">In Tirol is gerade wieder eine Ausgangssperre</string>
 
 
     <string name="quote1"> Stay positive cause you are not negative</string>
@@ -16,6 +17,18 @@
     <string name="quote4"> I will not add year 2020 to my age cause I did not use it</string>
     <string name="quote5"> Roses are red, March is grey, I hope we can leave our houses in May</string>
 
+
+    <string name="textVorarlberg">Vorarlberg</string>
+    <string name="textTirol">Tirol</string>
+    <string name="textSalzburg">Salzburg</string>
+    <string name="textOberÖsterreich">Oberösterreich</string>
+    <string name="textNiederÖsterreich">Niederösterreich</string>
+    <string name="textWien">Wien</string>
+    <string name="textBurgenland">Burgenland</string>
+    <string name="textKärnten">Kärnten</string>
+    <string name="textSteiermark">Steiermark</string>
+
+
     <string-array name="quotes">
         <item>@string/quote1</item>
         <item>@string/quote2</item>
@@ -23,4 +36,13 @@
         <item>@string/quote4</item>
         <item>@string/quote5</item>
     </string-array>
+    <string name="title_activity_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 </resources>
