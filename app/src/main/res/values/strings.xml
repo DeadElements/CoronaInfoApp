@@ -36,6 +36,7 @@
         <item>@string/quote4</item>
         <item>@string/quote5</item>
     </string-array>
+
     <string name="title_activity_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
