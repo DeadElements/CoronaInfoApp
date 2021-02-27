@@ -42,7 +42,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void randomQuote() {
         String[] quotes_array = getResources().getStringArray(R.array.quotes);
 
-        final int random = new Random().nextInt((quotes_array.length - 0) + 1) + 0;
+        Random r = new Random();
+        int random = r.nextInt(quotes_array.length);
         TextView textViewQuote = findViewById(R.id.textViewQuote);
         textViewQuote.setText(quotes_array[random]);
     }
