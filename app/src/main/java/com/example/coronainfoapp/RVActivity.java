@@ -12,16 +12,18 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class RVActivity extends AppCompatActivity {
     RecyclerView recyclerview;
-    String s1[], s2[];
+    String s1[], s2[], s3[];
 
     int images[] = {R.drawable.yellowdot,R.drawable.dot_red,R.drawable.yellowdot,R.drawable.yellowdot,
+            R.drawable.green_dot, R.drawable.yellowdot, R.drawable.dot_red, R.drawable.yellowdot, R.drawable.green_dot,
+            R.drawable.yellowdot,R.drawable.dot_red,R.drawable.yellowdot,R.drawable.yellowdot,
             R.drawable.green_dot, R.drawable.yellowdot, R.drawable.dot_red, R.drawable.yellowdot, R.drawable.green_dot};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_r_v);
 
-        setTitle("Aktive Coronafälle in Österreich");
+        setTitle("Corona Infos Österreich");
 
 
         FloatingActionButton fab2 = findViewById(R.id.go_to_map);
@@ -45,10 +47,11 @@ public class RVActivity extends AppCompatActivity {
 
         recyclerview = findViewById(R.id.recyclerview);
 
-        s1 = getResources().getStringArray(R.array.programming_languages);
+        s1 = getResources().getStringArray(R.array.bundesländer);
         s2 = getResources().getStringArray(R.array.description);
+        s3 = getResources().getStringArray(R.array.datum);
 
-        MyAdapter myAdapter = new MyAdapter(RVActivity.this, s1, s2 ,images);
+        MyAdapter myAdapter = new MyAdapter(RVActivity.this, s1, s2 , s3, images);
         recyclerview.setAdapter(myAdapter);
         recyclerview.setLayoutManager(new LinearLayoutManager(RVActivity.this));
 

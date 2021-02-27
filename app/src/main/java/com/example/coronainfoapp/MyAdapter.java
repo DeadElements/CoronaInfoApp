@@ -13,15 +13,17 @@ import androidx.recyclerview.widget.RecyclerView;
 import org.w3c.dom.Text;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
-    String data1[], data2[];
+    String data1[], data2[], data3[];
     int images[];
     Context context;
 
-    public MyAdapter(Context ct, String s1[], String s2[], int img[]) {
+    public MyAdapter(Context ct,  String[] s1, String[] s2, String[] s3, int[] img) {
         context = ct;
         data1 = s1;
         data2 = s2;
+        data3 = s3;
         images = img;
+
     }
 
     @NonNull
@@ -36,22 +38,24 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         holder.myText1.setText(data1[position]);
         holder.myText2.setText(data2[position]);
+        holder.myText3.setText(data3[position]);
         holder.myImage.setImageResource((images[position]));
     }
 
     @Override
     public int getItemCount() {
-        return images.length;
+        return data3.length;
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder{
-        TextView myText1, myText2;
+        TextView myText1, myText2, myText3;
         ImageView myImage;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             myText1 = itemView.findViewById(R.id.myText1);
             myText2 = itemView.findViewById(R.id.myText2);
+            myText3 = itemView.findViewById(R.id.myText3);
             myImage = itemView.findViewById(R.id.myImgageView);
         }
     }

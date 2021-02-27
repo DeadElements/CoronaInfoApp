@@ -1,5 +1,15 @@
 <resources>
-    <string-array name="programming_languages">
+    <string-array name="bundesländer">
+        <item>Tirol</item>
+        <item>Wien</item>
+        <item>Salzburg</item>
+        <item>Steiermark</item>
+        <item>Vorarlberg</item>
+        <item>Oberösterreich</item>
+        <item>Niederösterreich</item>
+        <item>Kärnten</item>
+        <item>Burgenland</item>
+
         <item>Tirol</item>
         <item>Wien</item>
         <item>Salzburg</item>
@@ -13,17 +23,50 @@
 
     <string-array name="description">
         <item>Derzeit 1245 Aktive Fälle</item>
-        <item>Derzeit 8327 Aktive Fälle</item>
+        <item>Derzeit 8320 Aktive Fälle</item>
+        <item>Derzeit 1613 Aktive Fälle</item>
+        <item>Derzeit 3093 Aktive Fälle</item>
+        <item>Derzeit 4854 Aktive Fälle</item>
+        <item>Derzeit 3723 Aktive Fälle</item>
+        <item>Derzeit 5225 Aktive Fälle</item>
+        <item>Derzeit 2126 Aktive Fälle</item>
+        <item>Derzeit 8362 Aktive Fälle</item>
+
+        <item>Derzeit 1244 Aktive Fälle</item>
+        <item>Derzeit 8323 Aktive Fälle</item>
         <item>Derzeit 1613 Aktive Fälle</item>
         <item>Derzeit 3090 Aktive Fälle</item>
-        <item>Derzeit 485 Aktive Fälle</item>
+        <item>Derzeit 4853 Aktive Fälle</item>
         <item>Derzeit 3729 Aktive Fälle</item>
         <item>Derzeit 5225 Aktive Fälle</item>
         <item>Derzeit 2126 Aktive Fälle</item>
-        <item>Derzeit 836 Aktive Fälle</item>
-
-
+        <item>Derzeit 8366 Aktive Fälle</item>
     </string-array>
+
+    <string-array name="datum">
+        <item>27.02.2021</item>
+        <item>27.02.2021</item>
+        <item>27.02.2021</item>
+        <item>27.02.2021</item>
+        <item>27.02.2021</item>
+        <item>27.02.2021</item>
+        <item>27.02.2021</item>
+        <item>27.02.2021</item>
+        <item>27.02.2021</item>
+
+        <item>26.02.2021</item>
+        <item>26.02.2021</item>
+        <item>26.02.2021</item>
+        <item>26.02.2021</item>
+        <item>26.02.2021</item>
+        <item>26.02.2021</item>
+        <item>26.02.2021</item>
+        <item>26.02.2021</item>
+        <item>26.02.2021</item>
+    </string-array>
+
+
+
 
     <string name="app_name">Corona Info</string>
     <string name="ButtonText1">Get latest Infos</string>

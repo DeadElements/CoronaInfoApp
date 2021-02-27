@@ -53,7 +53,7 @@ public class Settings extends AppCompatActivity {
         setContentView(R.layout.activity_settings);
 
 
-        // Vorarlber  ------------------------------------------------------------
+        // Vorarlberg  ------------------------------------------------------------
         switchMaterialVO = findViewById(R.id.switchMaterial_1);
         SharedPreferences settings = getSharedPreferences("Settings", 0);
         switchMaterialVO.setChecked(settings.getBoolean("Vorarlberg",false));
