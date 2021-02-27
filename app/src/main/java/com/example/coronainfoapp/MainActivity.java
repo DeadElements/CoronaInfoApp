@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        
+
 
         hideNavigationbar();
         randomQuote();
@@ -31,18 +31,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                /*
-                Intent intent = new Intent(this, Settings.class); <----------------- Manus kalsse hier anbinden
+                Intent intent = new Intent(MainActivity.this, RVActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);*/
+                startActivity(intent);
             }
         });
-
-
-
     }
 
-    private void randomQuote(){
+
+    private void randomQuote() {
         String[] quotes_array = getResources().getStringArray(R.array.quotes);
 
         final int random = new Random().nextInt((quotes_array.length - 0) + 1) + 0;
@@ -52,11 +49,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void hideNavigationbar() {
         this.getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN |
-                                                            View.SYSTEM_UI_FLAG_HIDE_NAVIGATION |
-                                                            View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY |
-                                                            View.SYSTEM_UI_FLAG_FULLSCREEN |
-                                                            View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION |
-                                                            View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
+                View.SYSTEM_UI_FLAG_HIDE_NAVIGATION |
+                View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY |
+                View.SYSTEM_UI_FLAG_FULLSCREEN |
+                View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION |
+                View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
     }
 
     private void currentCases() {
@@ -72,7 +69,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         startActivity(intent);
     }
 
-    private void startIntent () {
+    private void startIntent() {
         Intent intent = new Intent(this, Settings.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
