@@ -17,6 +17,10 @@ public class RVActivity extends AppCompatActivity {
     int images[] = {R.drawable.yellowdot,R.drawable.dot_red,R.drawable.yellowdot,R.drawable.yellowdot,
             R.drawable.green_dot, R.drawable.yellowdot, R.drawable.dot_red, R.drawable.yellowdot, R.drawable.green_dot,
             R.drawable.yellowdot,R.drawable.dot_red,R.drawable.yellowdot,R.drawable.yellowdot,
+            R.drawable.green_dot, R.drawable.yellowdot, R.drawable.dot_red, R.drawable.yellowdot, R.drawable.green_dot,
+            R.drawable.yellowdot,R.drawable.dot_red,R.drawable.yellowdot,R.drawable.yellowdot,
+            R.drawable.green_dot, R.drawable.yellowdot, R.drawable.dot_red, R.drawable.yellowdot, R.drawable.green_dot,
+            R.drawable.yellowdot,R.drawable.dot_red,R.drawable.yellowdot,R.drawable.yellowdot,
             R.drawable.green_dot, R.drawable.yellowdot, R.drawable.dot_red, R.drawable.yellowdot, R.drawable.green_dot};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
