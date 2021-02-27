@@ -31,11 +31,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, RVActivity.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+                startRVActivity();
             }
         });
+
+        Button button = findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startRVActivity();
+            }
+        });
+    }
+
+    private void startRVActivity () {
+        Intent intent = new Intent(MainActivity.this, RVActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(intent);
     }
 
 
@@ -60,7 +72,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void currentCases() {
         TextView textViewCases = findViewById(R.id.cases);
         textViewCases.setText("1143");
-
     }
 
     @Override
@@ -69,12 +80,4 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
     }
-
-    private void startIntent() {
-        Intent intent = new Intent(this, Settings.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        startActivity(intent);
-    }
-
-
 }
