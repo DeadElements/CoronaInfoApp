@@ -124,10 +124,17 @@ public class Settings extends AppCompatActivity {
             SharedPreferences.Editor editor = settings1.edit();
             editor.putBoolean("Vorarlberg", switchMaterialVO.isChecked());
             editor.apply();
+
+
+            NotificationManager notif=(NotificationManager)getSystemService(Context.NOTIFICATION_SERVICE);
+            Notification notify = new Notification.Builder
+                    (getApplicationContext()).setContentTitle("Tirol").setContentText("Hallo").
+                    setContentTitle("subject").setSmallIcon(R.drawable.ic_info_solid).build();
+
+            notify.flags |= Notification.FLAG_AUTO_CANCEL;
+            notif.notify(0, notify);
         });
 
-
-            addNotification();
 
     }
     private void tiListener() {
